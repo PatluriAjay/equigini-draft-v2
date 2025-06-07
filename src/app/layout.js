@@ -39,17 +39,15 @@ export default function RootLayout({ children }) {
           <div className="absolute w-1/3 h-1/3 bottom-0 right-0 bg-gradient-to-tr from-purple-300/30 via-pink-200/30 to-blue-200/30 rounded-full blur-2xl opacity-40" />
         </div>
         <div className="relative z-10 min-h-screen">
-              <div className="flex min-h-screen">
-                <Sidebar />
-                <div className="flex-1 flex flex-col">
-                  <div className="px-10 pt-3 w-full">
-                    <Topbar />
-                  </div>
-                  
-          {children}
-                </div>
+          <div className="flex min-h-screen">
+            <Sidebar />
+            <div className="flex-1 flex flex-col">
+              <div className="px-10 pt-3 w-full">
+                <Topbar />
               </div>
-          
+              {children}
+            </div>
+          </div>
         </div>
       </body>
     </html>
